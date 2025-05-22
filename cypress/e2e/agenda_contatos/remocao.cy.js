@@ -7,7 +7,7 @@ describe('Teste para remoção de um contato', () => {
 })
 
 
-it('Deve apagar todo os dados do contato', () => {
+it('Deve apagar o primeiro contato da lista', () => {
 cy.get('.delete').first().click()
 
 })

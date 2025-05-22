@@ -7,11 +7,11 @@ describe('Teste para alteração dos dados cadastrados', () =>{
 
     it('Deve permitir editar as informações do contato e salvar após alterações', () => {
          cy.get('.edit').first().click()
-         cy.get('input[type="text"]').clear().type('GIAN SOUZA')
-         cy.get('input[type="email"]').clear().type('Gian@gmail.com')
-         cy.get('input[type="tel"]').clear().type(11982212878)
-        cy.get('.alterar').first().click()
-
+         cy.get('input[placeholder="Nome"]').clear().type('Maria')
+         cy.get('input[placeholder="E-mail"]').clear().type('maria_carla@gmail.com')
+         cy.get('input[placeholder="Telefone"]').clear().type(11998124587)
+         cy.get('.alterar').first().click()
+       
 
     })
 })
